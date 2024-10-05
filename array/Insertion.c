@@ -12,30 +12,22 @@ int main() {
     }
     printf("Enter the position where you want to insert the new element (1 to %d): ", size + 1);
     scanf("%d", &pos);
-
     // Validate position
     if (pos < 1 || pos > size + 1) {
         printf("Invalid position!\n");
         return 1;
     }
-    
     printf("Enter the value of the new element: ");
     scanf("%d", &value);
-
-    // Shift elements to the right to make space for the new element
     for (int i = size; i >= pos; i--) {
         arr[i] = arr[i - 1];
     }
-
     // Insert the new element
     arr[pos - 1] = value;
-    size++;  // Increase the size of the array
-
-    // Print the updated array
+    size++; 
     printf("Array after insertion:\n");
     for (int i = 0; i < size; i++) {
         printf("%d ", arr[i]);
     }
-
     return 0;
 }
