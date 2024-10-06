@@ -22,7 +22,6 @@ int main() {
     for (int i = size; i >= pos; i--) {
         arr[i] = arr[i - 1];
     }
-    // Insert the new element
     arr[pos - 1] = value;
     size++; 
     printf("Array after insertion:\n");
