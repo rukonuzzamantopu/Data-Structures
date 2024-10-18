@@ -82,5 +82,3 @@ int main () {
     
     return 0;
 }
-Lec11.c
-Displaying Lec11.c.

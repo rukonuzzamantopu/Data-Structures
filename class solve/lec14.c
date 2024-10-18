@@ -94,5 +94,3 @@ int main () {
     
     return 0;
 }
-Lec14.c
-Displaying Lec14.c.

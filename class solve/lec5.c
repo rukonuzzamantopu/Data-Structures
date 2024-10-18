@@ -26,5 +26,3 @@ int main () {
     
     return 0;
 }
-Lec5.c
-Displaying Lec5.c.
