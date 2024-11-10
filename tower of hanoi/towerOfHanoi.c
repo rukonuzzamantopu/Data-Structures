@@ -6,7 +6,7 @@ void towerOfHanoi(int n, char beg, char aux, char end) {
     }
     else{
     towerOfHanoi(n - 1, beg, end, aux);
-    towerOfHanoi(1, beg, aux, end);
+    towerOfHanoi(1,     beg, aux, end);
     towerOfHanoi(n - 1, aux, beg, end);
     }
 }
