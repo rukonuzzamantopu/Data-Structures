@@ -2,8 +2,7 @@
 #include <stdlib.h>
 
 int main(){
-   struct node 
-   {
+   struct node {
     int data;
     struct node *next;
    };
@@ -18,8 +17,7 @@ newnode =(struct node*)malloc(sizeof(struct node));
 printf("enter you data :");
 scanf("%d",&newnode->data);
 newnode -> next=0;
-if(head==0)
-{
+if(head==0){
     head=temp=newnode;
 }else{
     temp->next=newnode;

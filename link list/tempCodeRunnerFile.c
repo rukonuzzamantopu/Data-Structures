@@ -1,1 +1,1 @@
-getch();
+beginning
