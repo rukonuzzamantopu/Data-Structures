@@ -4,7 +4,7 @@
 
 struct PropertySale {
     int uid;
-    char address[100];
+    char address[50];
     int zip;
     int size;
     int year;
@@ -29,7 +29,7 @@ void freeDatabase(struct SalesDatabase *db);
 struct PropertySale* createNode();
 
 int main() {
-     struct SalesDatabase db;
+    struct SalesDatabase db;
     db.head = NULL; 
 
     int choice;
@@ -70,10 +70,9 @@ int main() {
             GetPrice(&db);
         } else if (choice == 7) {
             AveragePrice(&db);
-        } else if (choice == 8) {
+        } else if (choice == 8 ) {
             SaleCount(&db);
         } else if (choice == 9) {
-            freeDatabase(&db);
             printf("Log Out Successful\n");
             exit(0);
         } else {
@@ -91,7 +90,7 @@ void printMainMenu(void) {
     printf("3. Find a property from the system\n");
     printf("4. See all properties\n");
     printf("5. Get zip code\n");
-    printf("6. Price\n");
+    printf("6. Get Price\n");
     printf("7. Average prices of sales property\n");
     printf("8. Total sales\n");
     printf("9. Log Out\n");
@@ -101,10 +100,6 @@ void printMainMenu(void) {
 // Create a new node for a sale entry
 struct PropertySale* createNode() {
     struct PropertySale* newNode = (struct PropertySale*)malloc(sizeof(struct PropertySale));
-    if (newNode == NULL) {
-        printf("Memory allocation failed.\n");
-        exit(1); 
-    }
     newNode->next = NULL;
     return newNode;
 }
@@ -119,6 +114,7 @@ void Sales(struct SalesDatabase *db) {
         free(newSale);
         return;
     }
+    
     printf("Enter Address: ");
     scanf(" %[^\n]s", newSale->address);
     printf("Enter ZIP code: ");
@@ -162,16 +158,21 @@ void Erase(struct SalesDatabase *db) {
     }
 
     struct PropertySale *current;
-    if (db->head != NULL && db->head->uid == uid) {
+    struct PropertySale *temp = db->head;
+    if(temp == NULL){
+        printf("No Sale to delete.\n");
+        return;
+        }
+    
+    else if(db->head->uid == uid) {
         current = db->head;
-        db->head = current->next; 
+        db->head = current->next;
         free(current); 
         printf("Sale with UID %d deleted successfully.\n", uid);
         return;
     }
 
-    struct PropertySale *temp = db->head;
-    while (temp != NULL && temp->next != NULL) {
+    while (temp->next != NULL) {
         if (temp->next->uid == uid) {
             current = temp->next;
             temp->next = current->next;
@@ -181,7 +182,6 @@ void Erase(struct SalesDatabase *db) {
         }
         temp = temp->next;
     }
-
     printf("Sale with UID %d not found.\n", uid);
 }
 
