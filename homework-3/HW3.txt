@@ -1,0 +1,30 @@
+Department of Computer Science and Engineering
+Green University of Bangladesh
+
+CSE 205 - Data Structure
+
+Homework 3
+Marks: 10
+Due: October 20, 2024
+Note: Late projects will be assessed a 20% penalty for each day past the due date. Projects will not be accepted more than four days past the due date.
+
+Objective
+To comprehend the operations related to date structures within a Linked List, namely insertion, deletion, searching, and traversing 
+
+Problem Description
+Write a program for a development company that sells properties. To do this, create a structure, named PropertySale, which records the UID (unique identification number), address, ZIP code, size, construction year, and price of a flat that was sold. Implement a singly linked list to store information in a database, called SalesDatabase. The linked list will allow the following operations:
+
+ - Insert new flat sale information: Use a function named Sales() to insert new sale information at the end of the linked list.
+ - Delete an entry: Use a function named Erase() to delete an entry from the linked list based on the UID.
+ - Find an entry: Use a function named Search() to find an entry in the linked list based on the UID.
+ - Print element(s): Use a function named PrintDB() to print all elements or a specific entry from the linked list.
+ - Get ZIP code: Use a function named GetZIP() to retrieve the ZIP code of a flat.
+ - Get price: Use a function named GetPrice() to retrieve the sales price of a flat.
+ - Count total sales: Use a function named SalesCount() to count the total number of entries (nodes) in the linked list.
+ - Compute average price: Use a function named AveragePrice() to compute the average sales price of all flats in the linked list.
+
+Rubrics
+60% Execution. Partial credit will be granted depending on how many of your methods work correctly.
+30% Design. The design score is based on how easy it is to follow the logic of your code, how well you avoided repetitive code, and how easy it would be to change your code if certain specifications changed.
+10% Style. Style includes comments, indentation, and choice of variable and method names.
+Substantial progress must be made towards correct execution to earn the points for design, and style.

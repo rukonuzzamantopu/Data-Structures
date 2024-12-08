@@ -1,0 +1,29 @@
+Department of Computer Science and Engineering
+Green University of Bangladesh
+
+CSE 205 - Data Structure
+
+Homework 1
+Marks: 10
+Due: September 18, 2024
+Note: Late projects will be assessed a 20% penalty for each day past the due date. Projects will not be accepted more than four days past the due date.
+
+Objective
+To comprehend the operations related to date structures within an array, namely insertion, deletion, searching, and traversing 
+
+Problem Description
+Write a program for a development company that sells properties. To do this, create a structure, named PropertySale, which records UID or unique identification number, address, ZIP code, size, construction year, and price of a flat that was sold. Create a database of PropertySale structure to store information, called SalesDatabase. Following operations can be performed on this database:
+
+- Insert new flat sale information using a function, named Sales()
+- Delete an entry in the database based on UID using a function, named Erase()
+- Find an entry in the database using a function, called Search()
+- Print an/all element(s) from the databse using a function, called PrintDB()
+- GetZIP() and GetPrice() functions will allow access to the ZIP code and sales price of a flat
+- Count the total sales in the database using a function called SalesCount()
+- Compute the average prices for all the sales using a function, named AveragePrice()
+
+Rubrics
+60% Execution. Partial credit will be granted depending on how many of your methods work correctly.
+30% Design. The design score is based on how easy it is to follow the logic of your code, how well you avoided repetitive code, and how easy it would be to change your code if certain specifications changed.
+10% Style. Style includes comments, indentation, and choice of variable and method names.
+Substantial progress must be made towards correct execution to earn the points for design, and style.
