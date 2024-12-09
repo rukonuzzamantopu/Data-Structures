@@ -23,10 +23,11 @@ int Top(){
 }
 void print(){
     int i;
-    printf("stack: ");
+    // printf("stack: ");
     for(i=0;i<=top;i++)
-    printf("%d",A[i]);
+        printf("%d ",A[i]);
     printf("\n");
+    
 }
 int main(){
 push(2);print();
@@ -34,6 +35,6 @@ push(10);print();
 push(12);print();
 pop();print();
 pop(2);print();
-push(2);print();
+// push(2);print();
 
 }
