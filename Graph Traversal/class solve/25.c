@@ -9,25 +9,26 @@ void AddEdge (int Graph[][NoV], int i, int j) {
 
 void PrintGraph (int Graph[][NoV]) {
     for (int i = 0; i < NoV; i++) {
+        printf("Vertics %d: ",i);
         for (int j = 0; j < NoV; j++) {
             printf ("%d ", Graph[i][j]);
         }
         printf ("\n");
     }
 }
-
-void DFS (int Graph[][NoV], int vertex, int Visited[]) {
+void DFS (int Graph[NoV][NoV], int vertex, int Visited[]) {
     Visited [vertex] = 1;
     printf ("Visisted: %d\n", vertex);
     
     for (int i = 0; i < NoV; i++) {
-        if (Graph[vertex][i] == 1 && Visited[i] == 0) 
+        if (Graph[vertex][i] == 1 && Visited[i] == 0){ 
             DFS (Graph, i, Visited);
+        }
     }
 }
 
 int main () {
-    int Graph[NoV][NoV];
+    int Graph[NoV][NoV] = {0};
     int Visited[NoV] = {0};
     AddEdge (Graph, 0, 1);
     AddEdge (Graph, 0, 2);
