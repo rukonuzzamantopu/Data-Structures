@@ -9,7 +9,7 @@
 
 ## 📖 About
 This repository is a collection of my **Data Structure practice, lab works, and projects** completed during my coursework in Computer Science & Engineering.  
-It includes implementations, problem-solving exercises, and **33 class problems** solved under the guidance of *Prof. Dr. Md. Saiful Azad*.  
+It includes implementations, problem-solving exercises, and **30+ class problems** solved under the guidance of *Prof. Dr. Md. Saiful Azad*.  
 
 The main goal of this repository is to **strengthen my understanding of core data structure concepts** and share my work with others for learning and collaboration.  
 
