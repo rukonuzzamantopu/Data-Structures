@@ -57,7 +57,6 @@ A **simple project** demonstrating the application of data structures.
 ## 📘 Class Problems  
 Contains **30 + problems** solved during class under the guidance of **Prof. Dr. Md. Saiful Azad**.  
 
----
 
 ## 🚀 Getting Started  
 
